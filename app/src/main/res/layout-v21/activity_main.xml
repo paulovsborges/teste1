@@ -2,61 +2,70 @@
 <LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
     xmlns:app="http://schemas.android.com/apk/res-auto"
     xmlns:tools="http://schemas.android.com/tools"
-    android:background="#4B0082"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    tools:context=".MainActivity"
-    android:orientation="vertical">
-
-
+    android:background="#4B0082"
+    android:orientation="vertical"
+    tools:context=".MainActivity">
 
 
     <TextView
-        android:textSize="25dp"
-        android:layout_marginTop="30dp"
-        android:textColor="@color/white"
-        android:text="@string/valor_em_real"
-        android:layout_gravity="center"
         android:layout_width="wrap_content"
-        android:layout_height="wrap_content"/>
-    <EditText
-        android:inputType="numberSigned"
-        android:backgroundTint="@color/white"
-        android:id="@+id/edit_value"
+        android:layout_height="wrap_content"
         android:layout_gravity="center"
+        android:layout_marginTop="30dp"
+        android:text="@string/valor_em_real"
+        android:textColor="@color/white"
+        android:textSize="25dp" />
+
+    <EditText
+        android:id="@+id/edit_value"
         android:layout_width="120dp"
         android:layout_height="wrap_content"
+        android:layout_gravity="center"
+        android:backgroundTint="@color/white"
+        android:inputType="numberSigned"
         android:text=""
-        android:textColor="@color/white"/>
+        android:textColor="@color/white" />
 
 
     <TextView
-        android:layout_marginTop="35dp"
-        android:layout_marginLeft="25dp"
-        android:textColor="@color/white"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:text="@string/dolar"/>
-    <TextView
-        android:layout_marginTop="40dp"
         android:layout_marginLeft="25dp"
-        android:textColor="@color/white"
+        android:layout_marginTop="35dp"
+        android:text="@string/dolar"
+        android:textColor="@color/white" />
+
+    <EditText
+        android:id="@+id/edit_dolar"
+        android:layout_width="120dp"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="25dp"
+        android:backgroundTint="@color/white"
+        android:inputType="numberSigned"
+        android:textColor="@color/white" />
+
+    <TextView
         android:id="@+id/text_dolar"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:text="@string/dolar"/>
+        android:layout_marginLeft="25dp"
+        android:layout_marginTop="20dp"
+        android:text="@string/dolar"
+        android:textColor="@color/white" />
+
+
 
     <Button
-        android:layout_marginTop="200dp"
-        android:layout_gravity="center"
-        android:textColor="@color/purple_700"
-        android:text="calcular"
+        android:id="@+id/calculate"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:backgroundTint="@color/teal_700"/>
-
-
-
+        android:layout_gravity="center"
+        android:layout_marginTop="130dp"
+        android:backgroundTint="@color/teal_700"
+        android:text="calcular"
+        android:textColor="@color/purple_700" />
 
 
 </LinearLayout>

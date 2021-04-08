@@ -1,6 +1,7 @@
 <resources>
     <string name="app_name">teste</string>
     <string name="valor_em_real">Valor em real</string>
-    <string name="dolar">valor dolar</string>
+    <string name="dolar">cotação da moeda desejada:</string>
+    <string name="informe_valor">informe um valor</string>
 
 </resources>
